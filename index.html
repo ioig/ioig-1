@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ioig</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        /* background: url('bg5.jpg'); */
+
+    }
+
+    header::before {
+        background: url('bg5.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.91;
+    }
+
+    .left {
+        font-family: cursive;
+        color: lightgoldenrodyellow;
+        position: absolute;
+        display: inline-block;
+        left: 34px;
+        top: 10px;
+        font-size: 60px;
+        text-shadow: 4px 6px 4px grey;
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        right: 16px;
+        top: 20px;
+
+    }
+
+    .mid {
+        border-radius: 17px;
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: rgba(238, 213, 130, 0.808);
+        padding: 35px 23px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    .navbar li a:hover {
+
+        opacity: 60%;
+        border-bottom: 2px solid red;
+    }
+
+    .button {
+        margin: 5px;
+        color: rgba(238, 213, 130, 0.808);
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        padding: 7px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    .button:hover {
+        opacity: 60%;
+    }
+
+
+    .newfom {
+        height: 100%;
+        width: 100%;
+
+
+    }
+
+    .formbox {
+        width: 380px;
+        height: 480px;
+        position: relative;
+        margin: 5% 10%;
+        background: transparent;
+        padding: 5px;
+        overflow: hidden;
+        border: 2px solid #08f1d2;
+        border-radius: 30px;
+        font-family: 'Kufam', cursive;
+    }
+
+    .wri {
+        position: absolute;
+        left: 800px;
+        color: #08f1d2;
+        font-size: 80px;
+        text-shadow: 0px -1px 37px #08f1d2;
+        top: 250px;
+    }
+
+    .btnbox {
+        width: 220px;
+        margin: 60px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px #04c9aee1;
+        border-radius: 30px;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+
+    .tbtn {
+        padding: 10px 34px;
+        cursor: pointer;
+        background: transparent;
+        position: relative;
+        border: 0;
+        outline: none;
+        color: rgb(226, 125, 43);
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    #regist:hover {
+        color: #04c9aee1;
+    }
+
+    #log:hover {
+        color: #04c9aee1;
+    }
+
+    #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: linear-gradient(to right, #08f1d2, #04ff8a);
+        border-radius: 30px;
+        transition: .5s;
+    }
+
+    .inputt {
+        top: 180px;
+        position: absolute;
+        width: 280px;
+        transition: .5s;
+
+    }
+
+    .sbtn {
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        border: 2px solid rgba(238, 213, 130, 0.808);
+        outline: none;
+        border-radius: 30px;
+        background: transparent;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    .sbtn:hover {
+        background: linear-gradient(to right, #08f1d2, #04ff8a);
+        color: black;
+        border: 0;
+    }
+
+    .field {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 1px solid #08f1d2;
+        outline: none;
+        background: transparent;
+        font-family: 'Kufam', cursive;
+        color: white;
+    }
+
+    .check {
+        margin: 30px 10px 30px 0;
+    }
+
+    #login {
+        left: 50px;
+    }
+
+    span {
+        color: gray;
+    }
+
+    #regis {
+        left: 450px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">ioig
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+        </div>
+
+        <div class="right">
+            <button class="button">Call Us Now</button>
+            <button class="button">Mail Us</button>
+        </div>
+
+    </header>
+
+    <div class="newfom">
+        <div class="wri">
+            <h3>Join Us </h3>
+        </div>
+        <div class="formbox">
+            <div class="btnbox">
+                <div id="btn"></div>
+                <button type="button" class="tbtn" onclick="login()" id="log">Log In</button>
+                <button type="button" class="tbtn" onclick="register()" id="regist">Register</button>
+            </div>
+
+            <form action="" class="inputt" id="login">
+                <input type="text" class="field" placeholder="User Id" required>
+                <input type="text" class="field" placeholder="Password" required>
+                <input type="checkbox" class="check"><span>remember password</span>
+                <button type="submit" class="sbtn">login</button>
+            </form>
+            <form action="" class="inputt" id="regis">
+                <input type="text" class="field" placeholder="User Id" required>
+                <input type="email" class="field" placeholder="Email" required>
+                <input type="text" class="field" placeholder="Password" required>
+                <input type="checkbox" class="check"><span>I agree terms and conditions</span>
+                <button type="submit" class="sbtn">register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("regis");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-480px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+        
+    </script>
+</body>
+
+</html>

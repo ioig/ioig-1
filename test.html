@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ioig</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('bg5.jpg');
+
+    }
+
+    /* header::before {
+        background: url('bg5.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.91; */
+    /* } */
+    #load{
+        background: black;
+        z-index: 999;
+        width: 100vw!important;
+        height: 100vh!important;
+        top: 0;
+        right: 0;
+        position: fixed;
+        
+
+    }
+
+    .left {
+        font-family: cursive;
+        color: lightgoldenrodyellow;
+        position: absolute;
+        display: inline-block;
+        left: 34px;
+        top: 10px;
+        font-size: 60px;
+        text-shadow: 4px 6px 4px rgb(14, 230, 230);
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        right: 16px;
+        top: 20px;
+
+    }
+
+    .mid {
+        border-radius: 17px;
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: rgba(238, 213, 130, 0.808);
+        padding: 35px 23px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    .navbar li a:hover {
+
+        opacity: 60%;
+        border-bottom: 2px solid red;
+    }
+
+    .button {
+        margin: 5px;
+        color: rgba(238, 213, 130, 0.808);
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        padding: 7px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    .button:hover {
+        opacity: 60%;
+    }
+
+
+    .newfom {
+        height: 100%;
+        width: 100%;
+
+
+    }
+
+    .formbox {
+        width: 380px;
+        height: 480px;
+        position: relative;
+        margin: 5% 10%;
+        background: transparent;
+        padding: 5px;
+        overflow: hidden;
+        border: 2px solid #08f1d2;
+        border-radius: 30px;
+        font-family: 'Kufam', cursive;
+    }
+
+    .wri {
+        position: absolute;
+        left: 800px;
+        color: #08f1d2;
+        font-size: 80px;
+        text-shadow: 0px -1px 37px #08f1d2;
+        top: 250px;
+    }
+
+    .btnbox {
+        width: 220px;
+        margin: 60px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px #04c9aee1;
+        border-radius: 30px;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+
+    .tbtn {
+        padding: 10px 34px;
+        cursor: pointer;
+        background: transparent;
+        position: relative;
+        border: 0;
+        outline: none;
+        color: rgb(226, 125, 43);
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    #regist:hover {
+        color: #04c9aee1;
+    }
+
+    #log:hover {
+        color: #04c9aee1;
+    }
+
+    #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: linear-gradient(to right, #08f1d2, #04ff8a);
+        border-radius: 30px;
+        transition: .5s;
+    }
+
+    .inputt {
+        top: 180px;
+        position: absolute;
+        width: 280px;
+        transition: .5s;
+
+    }
+
+    .sbtn {
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        border: 2px solid rgba(238, 213, 130, 0.808);
+        outline: none;
+        border-radius: 30px;
+        background: transparent;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive
+    }
+
+    .sbtn:hover {
+        background: linear-gradient(to right, #08f1d2, #04ff8a);
+        color: black;
+        border: 0;
+    }
+
+    .field {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 1px solid #08f1d2;
+        outline: none;
+        background: transparent;
+        font-family: 'Kufam', cursive;
+        color: white;
+    }
+
+    .check {
+        margin: 30px 10px 30px 0;
+    }
+
+    #login {
+        left: 50px;
+    }
+
+    span {
+        color: gray;
+    }
+
+    #regis {
+        left: 450px;
+    }
+
+    #logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fill 0.5s ease forwards 2s;
+    }
+
+    #logo path:nth-child(1) {
+        stroke-dasharray: 206.40000915527344;
+        stroke-dashoffset: 206.40000915527344;
+        animation: lineani 2s ease forwards;
+    }
+
+    #logo path:nth-child(2) {
+        stroke-dasharray: 273.2818603515625;
+        stroke-dashoffset: 273.2818603515625;
+        animation: lineani 2s ease forwards 0.3s
+    }
+
+    #logo path:nth-child(3) {
+        stroke-dasharray: 206.4010009765625;
+        stroke-dashoffset: 206.4010009765625;
+        animation: lineani 2s ease forwards 0.6s;
+    }
+
+    #logo path:nth-child(4) {
+        stroke-dasharray: 359.929931640625;
+        stroke-dashoffset: 359.929931640625;
+        animation: lineani 2s ease forwards 0.9s;
+    }
+
+    @keyframes lineani {
+
+        to {
+            stroke-dashoffset: 0;
+
+        }
+    }
+
+    @keyframes fill {
+        from {
+            fill: transparent;
+
+        }
+
+        to {
+            fill: #07fabd;
+
+        }
+    }
+</style>
+
+<body>
+    <div id="load">
+        <svg width="380" height="280" viewBox="0 0 176 87" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo">
+            <path d="M24.92 20.04V69H8.12V33H0.919998V20.04H24.92ZM8.12 0.839996H24.92V14.28H8.12V0.839996Z"
+                stroke="#07fabd" stroke-width="3" />
+            <path
+                d="M86.39 54.6C86.39 59.4 85.014 63.176 82.262 65.928C79.574 68.616 75.83 69.96 71.03 69.96H48.95C44.15 69.96 40.374 68.616 37.622 65.928C34.934 63.176 33.59 59.4 33.59 54.6V32.52C33.59 27.72 34.934 23.976 37.622 21.288C40.374 18.536 44.15 17.16 48.95 17.16H71.03C75.83 17.16 79.574 18.536 82.262 21.288C85.014 23.976 86.39 27.72 86.39 32.52V54.6ZM69.59 33.96C69.59 31.4 68.31 30.12 65.75 30.12H54.23C51.67 30.12 50.39 31.4 50.39 33.96V53.16C50.39 55.72 51.67 57 54.23 57H65.75C68.31 57 69.59 55.72 69.59 53.16V33.96Z"
+                stroke="#07fabd" stroke-width="3" />
+            <path
+                d="M116.139 20.04V69H99.3388V33H92.1387V20.04H116.139ZM99.3388 0.839996H116.139V14.28H99.3388V0.839996Z"
+                stroke="#07fabd" stroke-width="3" />
+            <path
+                d="M158.889 65.16C152.681 66.44 147.241 67.08 142.569 67.08H139.209C134.857 67.08 131.369 65.768 128.745 63.144C126.121 60.52 124.809 57.032 124.809 52.68V33.48C124.809 28.68 126.153 24.936 128.841 22.248C131.593 19.496 135.369 18.12 140.169 18.12H175.689V71.88C175.689 76.232 174.377 79.72 171.753 82.344C169.129 84.968 165.641 86.28 161.289 86.28C151.241 86.28 140.041 85.64 127.689 84.36V71.88C139.913 72.84 149.193 73.32 155.529 73.32C156.489 73.32 157.289 73 157.929 72.36C158.569 71.72 158.889 70.92 158.889 69.96V65.16ZM147.369 54.12C151.401 54.12 155.241 53.8 158.889 53.16V31.08H145.449C142.889 31.08 141.609 32.36 141.609 34.92V50.76C141.609 51.72 141.929 52.52 142.569 53.16C143.209 53.8 144.009 54.12 144.969 54.12H147.369Z"
+                stroke="#07fabd" stroke-width="3" />
+        </svg>
+    </div>
+    <header class="header">
+        <div class="left">ioig
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+        </div>
+
+        <div class="right">
+            <button class="button">Call Us Now</button>
+            <button class="button">Mail Us</button>
+        </div>
+
+    </header>
+
+    <div class="newfom">
+        <div class="wri">
+            <!-- <h3>Join Us </h3> -->
+        </div>
+        <div class="formbox">
+            <div class="btnbox">
+                <div id="btn"></div>
+                <button type="button" class="tbtn" onclick="login()" id="log">Log In</button>
+                <button type="button" class="tbtn" onclick="register()" id="regist">Register</button>
+            </div>
+
+            <form action="" class="inputt" id="login">
+                <input type="text" class="field" placeholder="User Id" required>
+                <input type="text" class="field" placeholder="Password" required>
+                <input type="checkbox" class="check"><span>remember password</span>
+                <button type="submit" class="sbtn">login</button>
+            </form>
+            <form action="" class="inputt" id="regis">
+                <input type="text" class="field" placeholder="User Id" required>
+                <input type="email" class="field" placeholder="Email" required>
+                <input type="text" class="field" placeholder="Password" required>
+                <input type="checkbox" class="check"><span>I agree terms and conditions</span>
+                <button type="submit" class="sbtn">register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("regis");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-480px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+        (function(){
+            var a =document.getElementById("load");
+            setTimeout(function(){
+                a.style.display="none";
+            },4000);
+        })();
+
+    </script>
+</body>
+
+</html>
